@@ -2,10 +2,13 @@ const targetText = document.getElementById('text')
 const inputText = document.getElementById('inputText')
 
 
+
 window.addEventListener('keyup', (e) => {
     const textArray = targetText.querySelectorAll('span')
     const inputArray = inputText.value.split("")
-    if (c == 0) timer = setInterval(counter, 1000)
+    if (c == 0) {
+        timer = setInterval(counter, 1000)
+    }
 
     textArray.forEach((characterSpan, index) => {
         const char = inputArray[index]
